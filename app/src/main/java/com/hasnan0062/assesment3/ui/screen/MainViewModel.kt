@@ -23,6 +23,15 @@ class MainViewModel : ViewModel() {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 data.value = KucingApi.service.getKucing()
+                    .take(4)
+                    .mapIndexed { index, kucing ->
+                        if (index == 0) {
+                            // Bikin URL error di item pertama
+                            kucing.copy(url = "https://example.com/image-not-found.jpg")
+                        } else {
+                            kucing
+                        }
+                    }
                 Log.d("MainViewModel", "Data retrieved successfully: ${data.value}")
             } catch (e: Exception) {
                 Log.d("MainViewModel", "Failure: ${e.message}")
