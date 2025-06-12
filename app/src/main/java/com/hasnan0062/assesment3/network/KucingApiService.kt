@@ -30,9 +30,6 @@ object KucingApi {
         retrofit.create(KucingApiService::class.java)
     }
 
-    fun getHewaUrl(imageId: String): String {
-        return "$BASE_URL$imageId.jpg"
-    }
 }
 
 enum class ApiStatus { LOADING, SUCCESS, FAILED }
