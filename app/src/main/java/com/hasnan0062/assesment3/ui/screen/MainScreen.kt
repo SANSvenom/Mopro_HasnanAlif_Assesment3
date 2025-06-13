@@ -229,7 +229,7 @@ fun MainScreen() {
                             userId = userId,
                             imageUrl = imageUrl
                         )
-                        Toast.makeText(context, "Resep berhasil diubah", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, "Gambar berhasil diubah", Toast.LENGTH_SHORT).show()
                         showEditDialog = false
                     },
                     isEdit = true
