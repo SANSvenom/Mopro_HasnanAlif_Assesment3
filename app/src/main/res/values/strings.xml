@@ -6,5 +6,14 @@
     <string name="profil">Profil</string>
     <string name="tutup">Tutup</string>
     <string name="logout">Logout</string>
+    <string name="batal">Batal</string>
+    <string name="simpan">Simpan</string>
+    <string name="hapus">Hapus</string>
+    <string name="edit">Edit</string>
+    <string name="keterangan">keterangan</string>
+    <string name="waktu">waktu</string>
+    <string name="nama">Nama</string>
+    <string name="tambah_hewan">Tambah Hewan</string>">
+
 
 </resources>

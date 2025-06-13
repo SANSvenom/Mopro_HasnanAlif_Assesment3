@@ -67,6 +67,12 @@ dependencies {
     implementation(libs.googleid)
     implementation(libs.androidx.datastore.preferences)
 
+    implementation(libs.gson)
+    implementation(libs.gsonconverter)
+
+    implementation(libs.android.image.cropper)
+    implementation(libs.androidx.foundation.android)
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
